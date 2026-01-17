@@ -4,77 +4,77 @@ This project is in aws_infra , the multi environment aws infrastructure
 
 📖 Project Overview
 
-  This project demonstrates how to design, provision, and manage a complete multi-environment AWS infrastructure using Terraform, following real-world DevOps practices.
+  -This project demonstrates how to design, provision, and manage a complete multi-environment AWS infrastructure using Terraform, following real-world DevOps practices.
 
-  The infrastructure is divided into Development, Staging, and Production environments with isolated resources, ensuring scalability, security, and environment parity.
+  -The infrastructure is divided into Development, Staging, and Production environments with isolated resources, ensuring scalability, security, and environment parity.
 
 🏗️ Architecture Overview
 
   Each environment contains:
 
-  Amazon S3 – Object storage for application assets
+  -Amazon S3 – Object storage for application assets
 
-  Amazon EC2 – Compute instances for application workloads
+  -Amazon EC2 – Compute instances for application workloads
 
-  Amazon RDS (DB) – Managed database service
+  -Amazon RDS (DB) – Managed database service
 
-  VPC (Dev) – Network isolation and control
+  -VPC (Dev) – Network isolation and control
 
-  Terraform Modules – Reusable and clean infrastructure code
+  -Terraform Modules – Reusable and clean infrastructure code
 
 📦 Production is scaled with multiple EC2 instances and S3 buckets to simulate real-world traffic handling.
 
 🌍 Environments Breakdown
 🔹 Development (DEV)
 
-  Single EC2 instance
+  -Single EC2 instance
 
-  S3 bucket
+  -S3 bucket
 
-  Database
+  -Database
 
-  Custom VPC
+  -Custom VPC
 
-  Used for active development and testing
+  -Used for active development and testing
 
 🔹 Staging (STG)
 
-  Production-like setup
+  -Production-like setup
 
-  EC2 + S3 + DB
+  -EC2 + S3 + DB
 
-  Used for final testing before release
+  -Used for final testing before release
 
 🔹 Production (PRD)
 
-  Multiple EC2 instances (high availability)
+  -Multiple EC2 instances (high availability)
 
-  Multiple S3 buckets
+  -Multiple S3 buckets
 
-  Dedicated database
+  -Dedicated database
 
-  Designed for scalability and reliability
+  -Designed for scalability and reliability
 
 ⚙️ Tools & Technologies Used
 
-  Terraform
+  -Terraform
 
-  AWS (EC2, S3, RDS, VPC)
+  -AWS (EC2, S3, RDS, VPC)
 
-  Infrastructure as Code (IaC)
+  -Infrastructure as Code (IaC)
 
-  Modular Terraform Design
+  -Modular Terraform Design
 
-  Environment Isolation
+  -Environment Isolation
 
 🚀 Key Learnings
 
-  Multi-environment infrastructure design
+  -Multi-environment infrastructure design
 
-  Terraform modules & reusability
+  -Terraform modules & reusability
 
-  Environment-specific variables
+  -Environment-specific variables
 
-  AWS networking & resource isolation
+  -AWS networking & resource isolation
 
   Production-ready DevOps mindset
